@@ -48,13 +48,13 @@ int main()
     for (int i = 0; i < numberOfStudents; i++)
     {
         fscanf(fptr,"%s",s[i].name);
-        printf("%s\n",s[i].name);
+        // printf("%s\n",s[i].name);
         fscanf(fptr,"%d",&s[i].roll);
-        printf("%d\n",s[i].roll);
+        // printf("%d\n",s[i].roll);
         fscanf(fptr,"%s",s[i].address);
-        printf("%s\n",s[i].address);
+        // printf("%s\n",s[i].address);
         fscanf(fptr,"%ld",&s[i].phoneNumber);
-        printf("%ld\n",s[i].phoneNumber);
+        // printf("%ld\n",s[i].phoneNumber);
     }
 
     int result;
