@@ -4,7 +4,16 @@
 
 using namespace std;
 
-int main(){
-    
+inline float display(float salary)
+{
+    return salary - salary * 0.1;
+}
+
+int main()
+{
+    float salary;
+    cout << "Enter salary: " << endl;
+    cin >> salary;
+    cout << "Net payment to the employee: " << display(salary) << endl;
     return 0;
 }
