@@ -5,15 +5,16 @@
 using namespace std;
 
 void feetToInches();
-void feetToInches(float & feet);
+float feetToInches(float & feet);
 void feetToInches(float feet1,float feet2);
 
 
 int main(){
-    float feetValue = 3.0f;
+    float data = 3.0f;
 
     feetToInches();
-    feetToInches(feetValue);
+    data = feetToInches(data);
+    cout<<"Equivalent inches of data: "<<data<<endl;
     feetToInches(10,4);
 
     return 0;
@@ -27,9 +28,9 @@ void feetToInches(){
     cout <<"Equivalent inch value: "<< feet * 12<<endl;
 }
 
-void feetToInches(float & feet){
+float feetToInches(float & feet){
     cout<<"Called function 2"<<endl;
-    cout <<"Equivalent inch value: "<< feet * 12<<endl;
+    return feet*12;
 }
 
 void feetToInches(float feet1,float feet2){

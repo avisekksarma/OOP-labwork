@@ -23,7 +23,7 @@ int main(){
     float io=25000;
     float sa=24000;
     float p=18000;
-    cout<< display(ceo,0.09)<<" "<< display(io,0.1)<<" "<<display(sa)<<" "<<display(p);
+    cout<< display(ceo,0.09)<<" "<< display(io,0.1)<<" "<<display(sa)<<" "<<display(p)<<endl;
     return 0;
 }
 
