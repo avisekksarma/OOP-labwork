@@ -41,12 +41,13 @@ int main()
     float overtimeInHrs;
     for (int i = 0; i < 2; i++)
     {
-        cout << "Enter id,year,bonus,overtime hours of emp:("<<i+1<<")" << endl;
-        cin >>id>>year>>bonus>>overtimeInHrs;
-        n[i].setpara(id,year,bonus,overtimeInHrs);
+        cout << "Enter id,year,bonus,overtime hours of emp:(" << i + 1 << ")" << endl;
+        cin >> id >> year >> bonus >> overtimeInHrs;
+        n[i].setpara(id, year, bonus, overtimeInHrs);
     }
 
-    for(int i =0;i<2;i++){
+    for (int i = 0; i < 2; i++)
+    {
         n[i].displayreport();
     }
     return 0;

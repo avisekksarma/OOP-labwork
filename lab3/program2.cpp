@@ -4,37 +4,48 @@
 
 using namespace std;
 
-class Prime{
-    public:
-    void askInputAndCalc(){
+class Prime
+{
+public:
+    void askInputAndCalc()
+    {
         char again;
-        do {
-            cout<<"Enter to check a number if it is prime: "<<endl;
-            cin>>n;
-            if(checkPrime()){
-                cout<<n<<" is prime"<<endl;
-            }else{
-                cout<<n<<" is not prime"<<endl;
+        do
+        {
+            cout << "Enter to check a number if it is prime: " << endl;
+            cin >> n;
+            if (checkPrime())
+            {
+                cout << n << " is prime" << endl;
             }
-            cout<<"Another number? (y/n)"<<endl;
-            cin>>again;
-        }while(again=='y' || again=='Y');
+            else
+            {
+                cout << n << " is not prime" << endl;
+            }
+            cout << "Another number? (y/n)" << endl;
+            cin >> again;
+        } while (again == 'y' || again == 'Y');
     }
-    bool checkPrime(){
-        
-        for(int i =2;i<n/2;i++){
-            if(n/i == n/(float)i){
+    bool checkPrime()
+    {
+
+        for (int i = 2; i < n / 2; i++)
+        {
+            if (n / i == n / (float)i)
+            {
                 // not prime
                 return false;
             }
         }
         return true;
     }
-    private:
+
+private:
     int n;
 };
 
-int main(){
+int main()
+{
     Prime p;
     p.askInputAndCalc();
     return 0;
