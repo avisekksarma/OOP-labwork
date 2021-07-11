@@ -22,7 +22,7 @@ public:
     }
     ~Engineer()
     {
-        delete val;
+        delete[] val;
     }
     void join(Engineer &a, Engineer &b)
     {
@@ -31,7 +31,7 @@ public:
         strcat(data, b.val);
         val = new char[strlen(data)];
         strcpy(val, data);
-        delete data;
+        delete[] data;
     }
     void display()
     {
